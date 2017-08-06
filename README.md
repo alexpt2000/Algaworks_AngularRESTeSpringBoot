@@ -1,6 +1,8 @@
 # Curso Algaworks
 > Angular, REST e Spring-Boot
 
+> https://github.com/algaworks/curso-angular-rest-spring-boot-api
+
 ## 1. Introdução ao REST
 - 1.1. Introdução ao curso
 - 1.2. Como usar o suporte
