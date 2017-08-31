@@ -23,12 +23,6 @@ public class LancamentoService {
 		return lancamentoRepository.save(lancamentoSalva);
 	}
 
-//	public void atualizarPropriedadeAtivo(Long codigo, Boolean ativo) {
-//		Pessoa lancamentoSalva = buscarLancamentoPeloCodigo(codigo);
-//		lancamentoSalva.setAtivo(ativo);
-//		lancamentoRepository.save(lancamentoSalva);
-//	}
-
 	private Lancamento buscarLancamentoPeloCodigo(Long codigo) {
 		Lancamento lancamentoSalva = lancamentoRepository.findOne(codigo);
 
