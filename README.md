@@ -58,6 +58,7 @@
 ## 6. Segurança da API
 - 6.1. Implementando autentica‡Æo Basic.mp4
 - 6.2. Fluxo b sico do OAuth.mp4
+-- https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
 - 6.3. Implementando seguran‡a com OAuth 2 e Password Flow.mp4
 - 6.4. JSON Web Tokens - JWT.mp4
 - 6.5. Configurando JWT no projeto.mp4
