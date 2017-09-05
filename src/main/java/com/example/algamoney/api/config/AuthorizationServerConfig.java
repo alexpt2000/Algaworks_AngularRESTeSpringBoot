@@ -47,6 +47,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		return accessTokenConverter;
 	}
 
+	
 	@Bean
 	public TokenStore tokenStore() {
 		return new JwtTokenStore(accessTokenConverter());
