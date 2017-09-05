@@ -61,6 +61,7 @@
 -- https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
 - 6.3. Implementando seguran‡a com OAuth 2 e Password Flow.mp4
 - 6.4. JSON Web Tokens - JWT.mp4
+-- https://jwt.io/
 - 6.5. Configurando JWT no projeto.mp4
 - 6.6. Renovando o access token com o refresh token.mp4
 - 6.7. Movendo o refresh token para o cookie.mp4
