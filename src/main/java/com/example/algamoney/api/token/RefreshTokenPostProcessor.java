@@ -1,4 +1,4 @@
-package com.example.algamoney.api.toen;
+package com.example.algamoney.api.token;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
