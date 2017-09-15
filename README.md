@@ -2,6 +2,7 @@
 > Angular, REST e Spring-Boot
 
 > https://github.com/algaworks/curso-angular-rest-spring-boot-api
+> https://github.com/algaworks/curso-angular-rest-spring-boot-ui
 
 ## 1. Introdução ao REST
 - 1.1. Introdu‡Æo ao curso.mp4
