@@ -15,9 +15,9 @@ public class Categoria {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
-	
+
 	@NotNull
-	@Size(min = 3, max = 50)
+	@Size(min = 3, max = 20)
 	private String nome;
 
 	public Long getCodigo() {
@@ -32,7 +32,7 @@ public class Categoria {
 		return nome;
 	}
 
-	public void setName(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 

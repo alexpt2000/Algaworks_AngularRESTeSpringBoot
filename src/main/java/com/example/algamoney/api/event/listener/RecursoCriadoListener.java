@@ -11,7 +11,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.example.algamoney.api.event.RecursoCriadoEvent;
 
 @Component
-public class RecursoCriadoListener implements ApplicationListener<RecursoCriadoEvent>{
+public class RecursoCriadoListener implements ApplicationListener<RecursoCriadoEvent> {
 
 	@Override
 	public void onApplicationEvent(RecursoCriadoEvent recursoCriadoEvent) {
@@ -19,13 +19,12 @@ public class RecursoCriadoListener implements ApplicationListener<RecursoCriadoE
 		Long codigo = recursoCriadoEvent.getCodigo();
 		
 		adicionarHeaderLocation(response, codigo);
-		
 	}
 
 	private void adicionarHeaderLocation(HttpServletResponse response, Long codigo) {
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{codigo}")
 				.buildAndExpand(codigo).toUri();
-			response.setHeader("Location", uri.toASCIIString());
+		response.setHeader("Location", uri.toASCIIString());
 	}
 
 }

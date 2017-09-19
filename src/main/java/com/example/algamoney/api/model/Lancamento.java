@@ -16,13 +16,13 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "Lancamento")
+@Table(name = "lancamento")
 public class Lancamento {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
-
+	
 	@NotNull
 	private String descricao;
 
@@ -45,37 +45,12 @@ public class Lancamento {
 	@NotNull
 	@ManyToOne
 	@JoinColumn(name = "codigo_categoria")
-	private Categoria categiria;
+	private Categoria categoria;
 
 	@NotNull
 	@ManyToOne
 	@JoinColumn(name = "codigo_pessoa")
 	private Pessoa pessoa;
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Lancamento other = (Lancamento) obj;
-		if (codigo == null) {
-			if (other.codigo != null)
-				return false;
-		} else if (!codigo.equals(other.codigo))
-			return false;
-		return true;
-	}
 
 	public Long getCodigo() {
 		return codigo;
@@ -133,12 +108,12 @@ public class Lancamento {
 		this.tipo = tipo;
 	}
 
-	public Categoria getCategiria() {
-		return categiria;
+	public Categoria getCategoria() {
+		return categoria;
 	}
 
-	public void setCategiria(Categoria categiria) {
-		this.categiria = categiria;
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 
 	public Pessoa getPessoa() {
@@ -147,6 +122,31 @@ public class Lancamento {
 
 	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Lancamento other = (Lancamento) obj;
+		if (codigo == null) {
+			if (other.codigo != null)
+				return false;
+		} else if (!codigo.equals(other.codigo))
+			return false;
+		return true;
 	}
 
 }

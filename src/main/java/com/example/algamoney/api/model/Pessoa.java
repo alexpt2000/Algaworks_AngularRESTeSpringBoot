@@ -59,17 +59,13 @@ public class Pessoa {
 	public void setAtivo(Boolean ativo) {
 		this.ativo = ativo;
 	}
-
 	
 	@JsonIgnore
 	@Transient
 	public boolean isInativo() {
-		
 		return !this.ativo;
 	}
-	
-	
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
