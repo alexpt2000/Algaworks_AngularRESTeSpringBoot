@@ -4,6 +4,11 @@
 - https://github.com/algaworks/curso-angular-rest-spring-boot-api
 - https://github.com/algaworks/curso-angular-rest-spring-boot-ui
 
+> Heroku
+- https://alexpt2000algamoney-api.herokuapp.com/
+- https://git.heroku.com/alexpt2000algamoney-api.git
+- mysql://d8exq4dp6etci486:fysr2zs67um7qxoe@tviw6wn55xwxejwj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/w22732s5rs896wb9
+
 ## 1. Introdução ao REST
 - 1.1. Introdu‡Æo ao curso.mp4
 - 1.2. Como usar o suporte.mp4
