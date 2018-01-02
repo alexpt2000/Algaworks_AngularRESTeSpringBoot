@@ -7,7 +7,13 @@
 > Heroku
 - https://alexpt2000algamoney-api.herokuapp.com/
 - https://git.heroku.com/alexpt2000algamoney-api.git
-- mysql://d8exq4dp6etci486:fysr2zs67um7qxoe@tviw6wn55xwxejwj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/w22732s5rs896wb9
+- Pass e Username na conta do Heroku
+- Git
+    - Git init
+    - Git add .
+    - Git commit -m "Descr"
+    - Git push heroku master
+    - Ver o Log (heroku logs --tail)
 
 ## 1. Introdução ao REST
 - 1.1. Introdu‡Æo ao curso.mp4
