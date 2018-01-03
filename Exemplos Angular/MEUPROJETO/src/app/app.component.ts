@@ -7,14 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   nome = "Alex";
+  adicionado = false;
 
   adicionar(){
-    console.log(this.nome);
+    console.log(`Adicionado ${this.nome}`);
+    this.adicionado = true;
 
   }
 
-  alterarNome(event: any){
-    this.nome = event.target.value;
-  }
 
 }
