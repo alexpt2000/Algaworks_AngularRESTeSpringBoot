@@ -1,12 +1,12 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {InputTextModule} from 'primeng/components/inputtext/inputtext';
-import {ButtonModule} from 'primeng/components/button/button';
-import {DataTableModule, SharedModule} from 'primeng/primeng';
 
+import { InputTextModule } from 'primeng/components/inputtext/inputtext';
+import { ButtonModule } from 'primeng/components/button/button';
+import { DataTableModule } from 'primeng/components/datatable/datatable';
 
 import { AppComponent } from './app.component';
-
 
 @NgModule({
   declarations: [
@@ -14,10 +14,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    InputTextModule,
     ButtonModule,
-    DataTableModule,
-    SharedModule,
-    InputTextModule
+    DataTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
