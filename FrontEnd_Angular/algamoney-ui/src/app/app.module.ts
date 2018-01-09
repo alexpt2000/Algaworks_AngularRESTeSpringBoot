@@ -10,6 +10,7 @@ import { TooltipModule } from 'primeng/components/tooltip/tooltip';
 import { CalendarModule } from 'primeng/primeng';
 import {SelectButtonModule} from 'primeng/primeng';
 import {DropdownModule} from 'primeng/primeng';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 
 import { AppComponent } from './app.component';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
@@ -35,6 +36,7 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     BrowserAnimationsModule,
     DropdownModule,
     SelectButtonModule,
+    CurrencyMaskModule,
     TooltipModule
   ],
   providers: [],
