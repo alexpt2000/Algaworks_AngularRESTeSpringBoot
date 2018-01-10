@@ -3,7 +3,7 @@ export class FuncionarioService {
   ultimoId = 1;
   funcionarios = [{ id: 1, nome: 'João' }];
 
-  adicionar(nome) {
+  adicionar(nome: string) {
     const funcionario = {
       id: ++this.ultimoId,
       nome: nome
