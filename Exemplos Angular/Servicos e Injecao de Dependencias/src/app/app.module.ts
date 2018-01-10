@@ -1,26 +1,22 @@
-import { LogService } from './log.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
-import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.component';
-import { FuncionarioService } from './funcionario.service';
+import { LogService } from './log.service';
+import { FuncionarioModule } from './funcionario/funcionario.module';
+import { FuncionarioService } from './funcionario/funcionario.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FuncionarioCardComponent,
-    FuncionarioFormComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FuncionarioModule
   ],
   providers: [
-    FuncionarioService,
-    LogService,
-    { provide: 'LogPrefixo', useValue: 'LOG2' }
+    LogService
   ],
   bootstrap: [AppComponent]
 })
