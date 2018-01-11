@@ -1,6 +1,7 @@
 import { CidadeService } from './cidade.service';
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { error } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-root',
@@ -37,9 +38,12 @@ export class AppComponent implements OnInit {
   atualizar(cidade: any) {
     this.cidadeService.atualizar(cidade).then(() => {
       alert(`Cidade "${cidade.nome}" alterado com sucesso!`);
-      this.consulta(); });
+      this.consulta(); })
+      .catch(erro => {
+        alert(erro);
+      });
 
-    // alert(JSON.stringify(cidade));
+
   }
 
 }

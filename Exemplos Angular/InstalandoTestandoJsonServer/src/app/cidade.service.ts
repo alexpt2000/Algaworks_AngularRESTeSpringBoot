@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { Response } from '@angular/http/src/static_response';
+import { error } from 'selenium-webdriver';
 
 
 @Injectable()
@@ -24,7 +25,10 @@ export class CidadeService {
   }
 
   atualizar(cidade: any): Promise<any> {
-    return this.http.put(`http://localhost:3000/cidades/${cidade.id}`, cidade).toPromise().then(response => response.json());
+    return this.http.put(`http://localhost:3000/cidades/${cidade.id}`, cidade).toPromise().then(response => response.json())
+    .catch(erro => {
+      return Promise.reject(`Erro ao alterar cidade ${cidade.id}`);
+    });
   }
 
 }
