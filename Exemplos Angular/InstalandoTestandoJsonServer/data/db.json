@@ -11,6 +11,18 @@
     {
       "nome": "Fortaleza",
       "id": 3
+    },
+    {
+      "nome": "Icaraima",
+      "id": 4
+    },
+    {
+      "nome": "Nova Andradina",
+      "id": 5
+    },
+    {
+      "nome": "Umuarama",
+      "id": 6
     }
   ]
 }
