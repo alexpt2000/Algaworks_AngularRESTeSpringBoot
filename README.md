@@ -4,6 +4,9 @@
 - https://github.com/algaworks/curso-angular-rest-spring-boot-api
 - https://github.com/algaworks/curso-angular-rest-spring-boot-ui
 
+> Create the JAR file
+- https://www.youtube.com/watch?v=qDTUYkaXAEc
+
 > Heroku
 - https://alexpt2000algamoney-api.herokuapp.com/
 - https://git.heroku.com/alexpt2000algamoney-api.git
