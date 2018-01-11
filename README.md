@@ -1,4 +1,8 @@
 # Curso Algaworks
+
+> Conteudos Para o Relatiorio
+- Bypass CORS - video 17.2
+
 > Angular, REST e Spring-Boot
 
 - https://github.com/algaworks/curso-angular-rest-spring-boot-api
