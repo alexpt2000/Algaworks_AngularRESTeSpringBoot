@@ -2,6 +2,7 @@
 
 > Conteudos Para o Relatiorio
 - Bypass CORS - video 17.2
+- Moment Js, biblioteca para datas abreviadas - Video 17.4 9min
 
 > Angular, REST e Spring-Boot
 
