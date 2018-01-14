@@ -3,6 +3,7 @@
 > Conteudos Para o Relatiorio
 - Bypass CORS - video 17.2
 - Moment Js, biblioteca para datas abreviadas - Video 17.4 9min
+- omponente Toasty - Mensagens no canto da tela - Video 17.9
 
 > Angular, REST e Spring-Boot
 
