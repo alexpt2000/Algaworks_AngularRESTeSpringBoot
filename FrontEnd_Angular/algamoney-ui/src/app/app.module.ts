@@ -24,18 +24,14 @@ import { LancamentoService } from './lancamentos/lancamento.service';
     BrowserAnimationsModule,
     HttpModule,
 
-    ToastyModule.forRoot(),
-    ConfirmDialogModule,
+
 
     CoreModule,
     LancamentosModule,
     PessoasModule
   ],
   providers: [
-    LancamentoService,
-    PessoaService,
-    ConfirmationService,
-    { provide: LOCALE_ID, useValue: 'pt-BR' }
+
   ],
   bootstrap: [AppComponent]
 })
