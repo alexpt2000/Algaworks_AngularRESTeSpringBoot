@@ -1,7 +1,13 @@
-import { PessoaService } from 'app/pessoas/pessoa.service';
+import { FormControl } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+
+import { ToastyService } from 'ng2-toasty';
+
 import { ErrorHandlerService } from './../../core/error-handler.service';
 import { CategoriaService } from './../../categorias/categoria.service';
-import { Component, OnInit } from '@angular/core';
+import { PessoaService } from './../../pessoas/pessoa.service';
+import { Lancamento } from './../../core/model';
+import { LancamentoService } from './../lancamento.service';
 
 @Component({
   selector: 'app-lancamento-cadastro',
@@ -16,13 +22,15 @@ export class LancamentoCadastroComponent implements OnInit {
   ];
 
   categorias = [];
-
   pessoas = [];
+  lancamento = new Lancamento();
 
   constructor(
     private categoriaService: CategoriaService,
     private pessoaService: PessoaService,
-    private erroHandler: ErrorHandlerService
+    private lancamentoService: LancamentoService,
+    private toasty: ToastyService,
+    private errorHandler: ErrorHandlerService
   ) { }
 
   ngOnInit() {
@@ -30,20 +38,33 @@ export class LancamentoCadastroComponent implements OnInit {
     this.carregarPessoas();
   }
 
+  salvar(form: FormControl) {
+    this.lancamentoService.adicionar(this.lancamento)
+      .then(() => {
+        this.toasty.success('Lançamento adicionado com sucesso!');
+
+        form.reset();
+        this.lancamento = new Lancamento();
+      })
+      .catch(erro => this.errorHandler.handle(erro));
+  }
+
   carregarCategorias() {
     return this.categoriaService.listarTodas()
-    .then(categorias => {
-      this.categorias = categorias.map(c => ({label: c.nome, value: c.codigo}));
-    })
-    .catch(erro => this.erroHandler.handle(erro));
+      .then(categorias => {
+        this.categorias = categorias
+          .map(c => ({ label: c.nome, value: c.codigo }));
+      })
+      .catch(erro => this.errorHandler.handle(erro));
   }
-
 
   carregarPessoas() {
-    return this.pessoaService.listarTodas()
-    .then(pessoas => {
-      this.pessoas = pessoas.map(c => ({label: c.nome, value: c.codigo}));
-    })
-    .catch(erro => this.erroHandler.handle(erro));
+    this.pessoaService.listarTodas()
+      .then(pessoas => {
+        this.pessoas = pessoas
+          .map(p => ({ label: p.nome, value: p.codigo }));
+      })
+      .catch(erro => this.errorHandler.handle(erro));
   }
+
 }
