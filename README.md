@@ -5,6 +5,8 @@
 - Moment Js, biblioteca para datas abreviadas - Video 17.4 9min
 - Componente Toasty - Mensagens no canto da tela - Video 17.9
 - Criar pagina nao encontrada - Video 18.11
+- Como o cliente se autentica na aplicacao, Exemplo convencionar e API - Video 19.1 e 19.2 (Muito importante)
+
 
 > Angular, REST e Spring-Boot
 
