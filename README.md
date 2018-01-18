@@ -7,6 +7,7 @@
 - Criar pagina nao encontrada - Video 18.11
 - Como o cliente se autentica na aplicacao, Exemplo convencionar e API - Video 19.1 e 19.2 (Muito importante)
 - Requerir token e client autorization, Video 19.4
+- Library para decodificar o JWT angular2-jwt - Video 19.5
 
 
 > Angular, REST e Spring-Boot
