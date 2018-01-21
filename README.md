@@ -10,6 +10,8 @@
 - Library para decodificar o JWT angular2-jwt - Video 19.5
 - Adicionar chamadas no HTTP do JWT - Video 19.7
 - Defini autorizacao de usuarios e definir o acesso do menu - Video 19.9
+- Obter um novo access token apartir do refresh, interceptando os pedidos - Video 19.11
+
 
 
 > Angular, REST e Spring-Boot
