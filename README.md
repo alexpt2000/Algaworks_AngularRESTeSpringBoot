@@ -18,7 +18,10 @@
 - Configurar o ambiente producao e de desenvolvimento - video 20.1
 - Fazendo build para o ambiente de produção - Video 20.2  ( ng build --environment=prod ) 
             - Para otimizar o tamhanho do projeto basta executar, remove codigo desnecessario ( ng build --prod )
-- Testando a aplicacao apos o build usando Node.js Express - Video 20.3 
+- Testando a aplicacao apos o build usando Node.js Express - Video 20.3
+            - ( node server.js ) 
+- Preparar o ambiente para o deploy no heruko - (Importante) - Video 20.4
+
 
 
 > Angular, REST e Spring-Boot
