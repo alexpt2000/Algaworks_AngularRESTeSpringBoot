@@ -1,5 +1,6 @@
 import { Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -19,6 +20,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
 @NgModule({
   imports: [
     CommonModule,
+    HttpModule,
     RouterModule,
 
     ToastyModule.forRoot(),

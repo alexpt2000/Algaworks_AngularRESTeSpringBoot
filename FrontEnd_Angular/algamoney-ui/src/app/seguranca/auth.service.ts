@@ -2,7 +2,6 @@ import { Http, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
 
 import { JwtHelper } from 'angular2-jwt';
-
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
@@ -28,12 +27,23 @@ export class AuthService {
     return this.http.post(this.oauthTokenUrl, body, { headers })
       .toPromise()
       .then(response => {
-        console.log(response);
         this.armazenarToken(response.json().access_token);
       })
       .catch(response => {
-        console.log(response);
+        if (response.status === 400) {
+          const responseJson = response.json();
+
+          if (responseJson.error === 'invalid_grant') {
+            return Promise.reject('Usuário ou senha inválida!');
+          }
+        }
+
+        return Promise.reject(response);
       });
+  }
+
+  temPermissao(permissao: string) {
+    return this.jwtPayload && this.jwtPayload.authorities.includes(permissao);
   }
 
   private armazenarToken(token: string) {
