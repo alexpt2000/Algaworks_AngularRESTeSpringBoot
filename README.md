@@ -11,7 +11,8 @@
 - Adicionar chamadas no HTTP do JWT - Video 19.7
 - Defini autorizacao de usuarios e definir o acesso do menu - Video 19.9
 - Obter um novo access token apartir do refresh, interceptando os pedidos - Video 19.11
-
+- Proteger navegacao de Rotas caso o usuario nao tenha pemicao para URL - Video 19.13
+- Tratando o redirecionamento da pagina para quando o access token ficar expirado, mostrando a pagina de login - Video 19.14
 
 
 > Angular, REST e Spring-Boot
