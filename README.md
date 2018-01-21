@@ -13,6 +13,12 @@
 - Obter um novo access token apartir do refresh, interceptando os pedidos - Video 19.11
 - Proteger navegacao de Rotas caso o usuario nao tenha pemicao para URL - Video 19.13
 - Tratando o redirecionamento da pagina para quando o access token ficar expirado, mostrando a pagina de login - Video 19.14
+- Removendo token para fazer o logout - video 19.16
+
+- Configurar o ambiente producao e de desenvolvimento - video 20.1
+- Fazendo build para o ambiente de produção - Video 20.2  ( ng build --environment=prod ) 
+            Para otimizar o tamhanho do projeto basta executar, remove codigo desnecessario ( ng build --prod )
+
 
 
 > Angular, REST e Spring-Boot
