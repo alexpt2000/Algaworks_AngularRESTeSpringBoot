@@ -1,7 +1,7 @@
 # Curso Algaworks
 ## Angular 4, REST e Spring Boot
 ![Screencast](Screencast/StringAngular.webp)
-![Screencast](Screencast/StringAngular.webp)
+![Screencast](Screencast/JWT.svg)
 
 ## Deploy no Heroku
 ![Screencast](Screencast/Heroku_logop.png)
