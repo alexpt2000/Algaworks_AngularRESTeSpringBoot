@@ -17,8 +17,8 @@
 
 - Configurar o ambiente producao e de desenvolvimento - video 20.1
 - Fazendo build para o ambiente de produção - Video 20.2  ( ng build --environment=prod ) 
-            Para otimizar o tamhanho do projeto basta executar, remove codigo desnecessario ( ng build --prod )
-
+            - Para otimizar o tamhanho do projeto basta executar, remove codigo desnecessario ( ng build --prod )
+- Testando a aplicacao apos o build usando Node.js Express - Video 20.3 
 
 
 > Angular, REST e Spring-Boot
